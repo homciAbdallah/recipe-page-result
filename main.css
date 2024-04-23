@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+--Nutmeg-Primary: hsl(14, 45%, 36%);
+--DarkRaspberry-Primary: hsl(332, 51%, 32%);
+--White-Neutral: hsl(0, 0%, 100%);
+--RoseWhite-Neutral: hsl(330, 100%, 98%);
+--Eggshell-Neutral: hsl(30, 54%, 90%);
+--LightGrey-Neutral: hsl(30, 18%, 87%);
+--WengeBrown-Neutral: hsl(30, 10%, 34%);
+--DarkCharcoal-Neutral: hsl(24, 5%, 18%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+font-size: 16px;  
+background-color: var(--Eggshell-Neutral);
+min-height: 100vh;
+display: grid;
+place-content: center;
+}
+.container{
+  background-color: var(--White-Neutral);
+  border-radius: 16px;
+  max-height: 1440px;
+  max-width: 500px;
+  padding: 30px;
+  margin: 20px auto;
+}
+p {
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  line-height: 2;
+}
+.images img {
+margin: auto ;
+padding: 10px ;
+width: 100%;
+border-radius: 16px;
+}
+
+#sus-titel {
+  color: var(--DarkCharcoal-Neutral);
+  font-weight: 700;
+  font-size: 26px;
+}
+#sus-pargra{
+  color: var(--WengeBrown-Neutral);
+  font-size:10px;
+  font-family: 'Outfit', sans-serif;
+}
+.titel{
+  padding: 10px ;  
+}
+.list1{
+  margin: 20px;
+  background-color: var(--RoseWhite-Neutral);
+}
+.list1 p{
+ font-family: 'Outfit', sans-serif;
+ color: var(--DarkRaspberry-Primary);
+ font-weight: 700;
+}
+
+.list1 li,.list2 li {
+  margin-left: 20px;
+  color: var(--WengeBrown-Neutral);
+  font-size:10px;
+  font-family: 'Outfit', sans-serif;
+  padding-top: 5px;
+
+}
+
+.list2 li::marker {
+  list-style-type: circle;
+  color: var(--Nutmeg-Primary);
+  font-weight: 700;
+}
+.list2 p,#Nutrition {   
+  color: var(--Nutmeg-Primary);
+  font-weight: 700;
+}
+
+hr {  
+  width: 100%;
+  margin: 10px 0px;
+  border-top: 1px solid var(--LightGrey-Neutral);
+}
+
+table {
+  margin: 10px;
+width: 100%;
+  border-collapse: collapse;
+  font-family: 'Outfit', sans-serif;
+  color: var(--WengeBrown-Neutral);
+  font-size: 10px;
+}
+td ,tr{
+  border-bottom: 1px solid var(--LightGrey-Neutral);
+}
+
+td {
+  padding: 8px 25px;
+}
+span{
+  font-weight:700
+}
+td span{
+  color: var(--Nutmeg-Primary);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    height: fit-content;
+    padding: unset;
+    margin: unset;
+    box-sizing: content-box;
+    border-radius: unset;
+
+  }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
